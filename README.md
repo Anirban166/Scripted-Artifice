@@ -23,17 +23,17 @@ ___
   ```
 - Bit manipulation
   - `&` over `%` for parity checks - `n & 1` would evaluate to be true (a boolean to be used inside an if-conditional over the ordinary `n % 2 != 0`) if `n` is odd (given that the least significant bit is always set if the number is not even).
-  - Play around with a particular bit:
-  ```cpp
-  n |= 1 << bitNum; // Set
-  n &= ~(1 << bitNum); // Clear
-  n ^= 1 << bitNum; // Toggle, much like https://stackoverflow.com/a/60946658/11422223
-  ```
   - `<<`/`>>` for mul/div operations with the powers of two. Ideal for conversions in between the units of information:
   ```cpp
   print("\n", ((1 << 10) << 10), "Kilobytes make up", (1048576 >> 20), "Gigabyte.");
   // 1048576 Kilobytes make up 1 Gigabyte. 
   ```
+  - Mess with a particular bit:
+  ```cpp
+  n |= 1 << bitNum; // Set
+  n &= ~(1 << bitNum); // Clear
+  n ^= 1 << bitNum; // Toggle, much like https://stackoverflow.com/a/60946658/11422223
+  ```  
   - RGB breakdown: (conversions to and from Hex or RGBA possible as well)
   ```cpp 
   // Considering red-green-blue to be represented by three sets of 8 bits, from left to right or from the MSB to the LSB:
