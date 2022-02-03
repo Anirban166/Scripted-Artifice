@@ -34,7 +34,13 @@ ___
   print("\n", ((1 << 10) << 10), "Kilobytes make up", (1048576 >> 20), "Gigabyte.");
   // 1048576 Kilobytes make up 1 Gigabyte. 
   ```
-  - Given that the difference between the lowercase and uppercase versions of ASCII alphabets in integers is 32, a quick conversion to those would be to respectively set or clear the sixth bit (since 2<sup>6 - 1</sup> = 32, with LSB being 2<sup>0</sup>) from the right: 
+  - RGB breakdown: (conversions to and from Hex or RGBA possible as well)
+  ```cpp 
+  // Considering red-green-blue to be represented by three sets of 8 bits, from left to right or from the MSB to the LSB:
+  int blue = rgb & 0xFF0000, green = (rgb >> 8) & 0xFF00, red = (rgb >> 16) & 0xFF;
+  rgbAgain = (red << 16) + (green << 8) + blue; 
+  ```
+  - Given that the difference between the lowercase and uppercase versions of ASCII alphabets in integers is 32, a quick switch to those would be to respectively set or clear the sixth bit (since 2<sup>6 - 1</sup> = 32, with the rightmost bit being 2<sup>0</sup>) from the right using appropriate characters: 
   ```cpp
   print((char)('a' & '_'), (char)('a' | ' ')); // A a
   // As expected, toggle works as well:
