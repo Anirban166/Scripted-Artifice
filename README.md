@@ -46,3 +46,8 @@ ___
   // As expected, toggle works as well:
   std::cout << (char)('X' ^ ' ') << (char)('d' ^ ' '); // xD 
   ```
+  - Check for a number to be a power of 2:
+  ```cpp
+  bool powerOfTwo = n && !(n & (n - 1));
+  if(powerOfTwo) print(n, "tends to be a power of 2.");
+  ```
