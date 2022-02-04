@@ -16,7 +16,8 @@ library(lattice, character.only = TRUE) #ggplot2, check with ?aes()
 - Print an assignment by enclosing it within parantheses.
 - Clear environment variables using `rm(list = ls())`.
 - Use`traceback()`, `broswer()` (breakpoints), conditions (`stopifnot("message" = condition)` and prints for debugging.
-- Summon a pipe: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>. Chain `dplyr` functions (for instance, `mtcars %>% rename(i = mpg, j = cyl) %>% select(i, j) %>% head()` and `mtcars %>% select(contains("hp")) %>% tail()` and create cool combos.
+- Summon a pipe: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>. Chain `dplyr` functions (for instance, `mtcars %>% rename(i = mpg, j = cyl) %>% select(i, j) %>% head()` and `mtcars %>% select(contains("hp")) %>% tail()`) to create cool combos.
+- Use options (for instance, `options(error = recover)` and `options(max.print = 1e+n)`).
 ___
 ### C++
 - Macros
