@@ -1,5 +1,15 @@
 ### R
-> To be updated soon.
+- Call/invoke a function without the name, by first assigning it to be the opening parenthesis:
+```r
+'(' = median
+(1:9) # 5
+```
+- Load a different library:
+```r 
+lattice <- "ggplot2"
+library(lattice) #lattice
+library(lattice, character.only = TRUE) #ggplot2
+```
 ___
 ### C++
 - Macros
