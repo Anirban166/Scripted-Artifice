@@ -12,6 +12,10 @@ library(lattice, character.only = TRUE) #ggplot2, check with ?aes()
 ```
 - Inspect the structure and contents of an object using a mix of functions such as `str()`, `attributes()`, `class()` and `unclass()`.
 - Use backticks for invalid (numeric constants, string with whitespaces or special symbols) column names.
+- Search for a file using <kbd>Tab</kbd> inside quotes (RStudio).
+- Print an assignment by enclosing it within parantheses.
+- Clear environment variables using `rm(list = ls())`.
+- Use`traceback()`, `broswer()` (breakpoints), conditions (`stopifnot("message" = condition)` and prints for debugging.
 ___
 ### C++
 - Macros
