@@ -7,8 +7,8 @@
 - Load one of two libraries with the same name:
 ```r 
 lattice <- "ggplot2"
-library(lattice) #lattice
-library(lattice, character.only = TRUE) #ggplot2
+library(lattice) #lattice, check with ?xyplot()
+library(lattice, character.only = TRUE) #ggplot2, check with ?aes()
 ```
 - Inspect the structure and contents of an object using a mix of functions such as `str()`, `attributes()`, `class()` and `unclass()`.
 - Use backticks for invalid (numeric constants, string with whitespaces or special symbols) column names.
