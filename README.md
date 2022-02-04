@@ -4,12 +4,14 @@
 '(' = median
 (1:9) # 5
 ```
-- Load a different library:
+- Load one of two libraries with the same name:
 ```r 
 lattice <- "ggplot2"
 library(lattice) #lattice
 library(lattice, character.only = TRUE) #ggplot2
 ```
+- Inspect the structure and contents of an object using a mix of functions such as `str()`, `attributes()`, `class()` and `unclass()`.
+- Use backticks for invalid (numeric constants, string with whitespaces or special symbols) column names.
 ___
 ### C++
 - Macros
