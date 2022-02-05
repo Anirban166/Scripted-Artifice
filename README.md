@@ -15,7 +15,7 @@ library(lattice, character.only = TRUE) #ggplot2, check with ?aes()
 - Search for a file using <kbd>Tab</kbd> inside quotes (RStudio).
 - Print an assignment by enclosing it within parantheses.
 - Clear environment variables using `rm(list = ls())`.
-- Use`traceback()`, `broswer()` (breakpoints), conditions (`stopifnot("message" = condition)` and prints for debugging.
+- Use`traceback()`, `broswer()` (breakpoints), conditions (`stopifnot("message" = bad.condition)` and prints for debugging.
 - Summon a pipe: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>. Chain `dplyr` functions (for instance, `mtcars %>% rename(i = mpg, j = cyl) %>% select(i, j) %>% head()` and `mtcars %>% select(contains("hp")) %>% tail()`) to create cool combos.
 - Use options (for instance, `options(error = recover)` and `options(max.print = 1e+n)`).
 ___
@@ -39,6 +39,8 @@ ___
     ((std::cout << args << " "), ...);
   }
   ```
+___
+### General
 - Bit manipulation
   - `&` over `%` for parity checks - `n & 1` would evaluate to be true (a boolean to be used inside an if-conditional over the ordinary `n % 2 != 0`) if `n` is odd (given that the least significant bit is always set if the number is not even).
   - `<<`/`>>` for mul/div operations with the powers of two. Ideal for conversions in between the units of information:
